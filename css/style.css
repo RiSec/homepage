@@ -1,11 +1,71 @@
+div{
+    width: 100%;
+    height: 40px;
+}
+
 .header{
     width: 100%;
     height: 50px;
     background-color: black ;
 }
 
-div{
+.footer{
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: 40px;
-    background-color: aqua;
+    height: 50px;
+    background-color: black ;
+}
+
+.center{
+    position: absolute;
+	top: 34%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.logo{
+    font-family: 'Train One', cursive;
+    font-size: 1500%;
+    animation: showLogo 2s ease-in-out;
+    left: 25%;
+}
+
+@keyframes showLogo{
+    0%{
+        opacity: 0;
+        left: 50%;
+    }  
+    50%{
+        opacity: 1;
+        left: 50%;
+    }
+    100%{
+        left: 25%;
+    }
+}
+
+.articles{
+    position: absolute;
+	top: 40%;
+	left: 65%;
+
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 300%;
+
+    animation: showArticles 2s ease-in-out;
+}
+
+@keyframes showArticles{
+    0%{
+        opacity: 0;
+    }  
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
